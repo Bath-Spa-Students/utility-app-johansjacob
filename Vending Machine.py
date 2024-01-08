@@ -128,8 +128,7 @@ def vending_machine():
 
 
 
-    
-        print(f"Thank you for your Purchase! Enjoy Your {item[item_code]}")
+   
         change = money - item[y]
         
 
@@ -142,6 +141,7 @@ def vending_machine():
             p_choice = input()
             if p_choice == "Y" or 'y':
                 print(f"Here Is Your Change: AED {change:.2f}")
+                print(f"Thank you for your Purchase! Enjoy Your {item[item_code]}")
                 
             else:
                 print("Thank you for the purchase, hope you have a wonderful day. \n Please Come Back Again.")
